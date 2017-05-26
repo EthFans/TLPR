@@ -6,13 +6,13 @@ Trustlines_White_Paper_v3  Google Doc: https://docs.google.com/document/d/1FHzto
 ## The global platform which enables permissionless 
 ## mobile payments based on people powered money
  
-## Draft Version 0.3
-## February 2017
+* Draft Version 0.3
+* February 2017
  
  
-## Heiko Hees
-## Gustav Friis
-## Kristoffer Naerland
+* Heiko Hees
+* Gustav Friis
+* Kristoffer Naerland
 
  
 ## Abstract
