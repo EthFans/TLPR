@@ -10,7 +10,7 @@
 * In this video, I will give a brief motivation of why crypto currencies as we know them, are not a good medium of exchange for everyday payments
 * Then, I’ll explain how the original ripple idea, can create a global payment network based upon the real world trust relationships, that exist between friends.
 * Next, I’ll explain how payments facilitated in a chain of friends-of-friends allow for debt cancellation
-*  and finally, I’ll address the system's resistance against sybil attacks 
+* and finally, I’ll address the system's resistance against sybil attacks 
  
 ## Adoption of cryptocurrency for payments
 * Many have seen blockchain as a promising solution to provide permissionless, decentralized, payments without central intermediaries
@@ -18,11 +18,11 @@
 * Today, using cryptocurrency for payments comes with a poor user experience. ‘
 * Cryptocurrencies acquired to make payments, feel more like prepaid accounts or gift certificates than actual money. 
 * This is because, They are usually bought with fiat first For example USD for Bitcoin
- * Pay for them today, eventually use them later.
+  * Pay for them today, eventually use them later.
 * Additionally, to make a payment, the average user needs to have:
- * A bank account
- * An exchange account
- * Some form of identification
+  * A bank account
+  * An exchange account
+  * Some form of identification
 * These prerequisites render the technology inaccessible, and therefore useless for those, who’d need it the most> the unbanked Because they don’t have a bank account or proper ID in the first place: 
 * So we believe, broader adoption of cryptocurrencies, for payments, depend on a value proposition, that can outcompete existing centralized payment services, instead of relying on them.
 * We were looking for alternatives and then the original Ripple idea came up.
@@ -30,9 +30,9 @@
 ## The Original Ripple Idea
 * So what is the original ripple idea?
 * Well, the foundation, is a network of people, who have existing trust relationships with each other. 
- * Credit lines, are established based on these mutual trust relationships
- * For example, you would probably trust your mom, dad or one of your friends with a credit line of $10 
- * On the other hand, you would probably not trust a “friend” who just added you on facebook with a credit line $10. Because that person is still a stranger to you  
+  * Credit lines, are established based on these mutual trust relationships
+  * For example, you would probably trust your mom, dad or one of your friends with a credit line of $10 
+  * On the other hand, you would probably not trust a “friend” who just added you on facebook with a credit line $10. Because that person is still a stranger to you  
 * Next, let’s look at how trust relationships are used to establish what we call trustlines
 ## A Trustline
 * A trustline exists, when two friends have give each other credit lines.
@@ -102,9 +102,9 @@
 ## Sybil Attack
 * The purpose of a sybil attack, is to attack a network by creating multiple, fake, accounts
 * Sybil attacks are something all social networks are exposed to 
- * For example: by creating fake accounts on facebook that befriends real people to steal their data
+  * For example: by creating fake accounts on facebook that befriends real people to steal their data
 * So here’s an evil idea by Eve:
- * Why not just cheat the system? 
+  * Why not just cheat the system? 
 * Eve could just create many fake accounts by using a proxy server, and give herself millions, within the system 
 * Eve thinks she can get away with this once the fake money has been traded into the network
 * In other words, Eve believes any debt created on the platform is fungible, regardless of the trustlines used: 
@@ -118,16 +118,16 @@
 * Eve’s friends have not given her a credit line of  $ 1 million and won’t, because they do not trust her with that amount of money
 * In other words: Eve does not have a sufficient capacity to spend her money with her friends.
 * Additionally, Eve’s fake accounts need to send money through Eve’s main account because:
- * Valuable trustlines are backed by real world identities
+  * Valuable trustlines are backed by real world identities
  
  
 ## And that’s the original idea
 * If you are curious to see applied examples of the original ripple idea we can recommend looking up Hawala banking or correspondence banking
 * The basic idea is:
- * Credit lines with people you trust, varying by how much you trust them
- * People you trust anywhere in the real world, for example your friends or family
- * You can send money through trusted connections 
- * And pay anyone in the network
- * You can close a trustline, if your balance with the other person is zero.
- * And because trustlines are linked to real world identities, sybil attacks do not work.
- * Thank you for watching
+  * Credit lines with people you trust, varying by how much you trust them
+  * People you trust anywhere in the real world, for example your friends or family
+  * You can send money through trusted connections 
+  * And pay anyone in the network
+  * You can close a trustline, if your balance with the other person is zero.
+  * And because trustlines are linked to real world identities, sybil attacks do not work.
+  * Thank you for watching
