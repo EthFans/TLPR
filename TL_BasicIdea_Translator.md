@@ -123,66 +123,121 @@
 * Bob的总余额保持不变，因为他花费的数额和获得的数额一样
 
 * And Charlie got paid with money he can trust from somebody that he knows.
-* 同时，Charlie从他可以信任的人那里 
+* 同时，Charlie会被他认识而且信任的人支付。
 * In fact, no one owes, or has money from somebody that they do not know or personally trust.
+* 实际上，没有人将会结欠他不认识或者不相信的人任何金额。
 * Not before or after the payment. 
+* 支付之前之后都不会发生。
 * This also scales out, if we put several people between Alice and Charlie, everyone would only be indebted to someone they have trusted with a credit line
+* 当这个规模化后，如果我们将很多人放在Alice和Charlie之间，所有人都仅会与他们给予过信用额度的人发生借贷关系。
  
 ### Debt cancellation
+### 债务抵消
 * You may be thinking that this sounds kind of impractical.
+* 你也许会觉得这个点子听起来好像不太实际。
 * Because now, you would have to run around and collect money all day 
+* 因为现在好像你必须一天都跑来跑去才能收回欠款
 * But that is actually not necessary
+* 但其实不需要这样做
 * And this is a quite powerful feature of the setup: we can mostly avoid settling
+* 这其实是整个系统中很强大的一个功能：我们基本上可以避免结算
 * Let’s add Dave into the picture 
-* He wants to pay Bob $5 
+* 让我们把Dave加入这个场景
+* He wants to pay Bob $5
+* 他希望支付Bob 5美金 
 * When many users are on the same network, the flow of money will naturally go in many directions
+* 当许多用户都基于同一个网络的时候，资金将会自然得流往许多方向
 * This will create a circular flow of money
+* 这将会造成一种资金的循环流动
  
 ### Debt Cancellation II
+### 债务抵消2
 * Meaning Debt cancels out over time
+* 这意味着债务将会随着时间互相抵消
 * And so real world settlements are in most scenarios unnecessary
+* 这也是为什么现实世界中的结算在许多情况下不再必要
  
  
 ### Closing a trustline
+### 关闭一条trustline
 * So sometimes relationships change - Alice and Bob have a fight and they don’t like each other anymore
+* 所以有的时候人际关系会发生变化 -- Alice和Bob吵了一架并且他们不再互相交流
 * The problem is, that Bob owes Alice money 
+* 但问题是，Bob欠Alice钱
 * And since Alice doesn’t trust Bob she wants to close the credit line,
+* 因为Alice不再相信Bob所以她希望关闭这个信用额度，
 * But, she doesn’t want to go and ask Bob to settle so they can close it.
+* 但是他不希望去找Bob来结算从而关闭这条线。
  
 ### Closing a trustline II
+### 关闭一条trustline 2
 * Alice can instead pay herself with the money Bob owes her
+* Alice其实可以支付自己Bob所欠她的金额
 * In doing so, the payment runs through a different path which reduces her trustline with Bob to zero
+* 这样做之后，这笔钱会通过许多条不同的通道来降低她与Bob之间的trustline并最终归零
 * The payment she makes  changes the individual trustlines so that Bob is indebted to Ed, who is indebted to Alice
+* 这笔支付交易会改变个人trustlines以至于Bob会欠Ed的钱，而Ed会欠Alice的钱
 * the net balance of the involved parties accounts, do not change. 
+* 但是所有相关方账户的总余额将保持不变。
 ## Sybil Attack
+## Sybil 攻击
 * The purpose of a sybil attack, is to attack a network by creating multiple, fake, accounts
+* Sybil攻击是通过创造多个虚假账户来攻击一个网络
 * Sybil attacks are something all social networks are exposed to 
+* Sybil 攻击是所有社交网络都会面临的问题
   * For example: by creating fake accounts on facebook that befriends real people to steal their data
+  * 举个例子：通过在facebook上制造虚假账号并与真实账户成为朋友从而偷去他们的数据
 * So here’s an evil idea by Eve:
+* 所以这里的Eve有一个邪恶的想法：
   * Why not just cheat the system? 
+  * 为什么不尝试欺骗整个系统？
 * Eve could just create many fake accounts by using a proxy server, and give herself millions, within the system 
+* Eve可以通过代理服务器来创建多个虚假账户，并且给她自己在系统里授信一百万美金
 * Eve thinks she can get away with this once the fake money has been traded into the network
+* Eve认为一旦假钱能被交易进入整个网络，她就可以成功欺骗系统
 * In other words, Eve believes any debt created on the platform is fungible, regardless of the trustlines used: 
+* 换句话说，Eve相信这个平台上的任何债务都是可以相互替代的，不论使用了哪几条trustlines：
 * This would be similar to FIAT currency, where a perfectly made fake dollar is indistinguishable from a real dollar to normal users
+* 这将会类似于法币，在法币系统中一张完美的假钞对于一般用户来说与一张真钞是一样且不可分辨的
 ## Sybil Attack II
+## Sybil 攻击2
 * However, in the trustlines network, she is unable to do that
+* 然而，在trustlines网络中，她是无法这样做的
 * Even though Eve supposedly has millions of dollars in her trustlines, she cannot spend them in the network
-* While Eve has real friends who trust her, they do not trust her fake accounts. 
+* 虽然Eve的trustlines理论上拥有百万美金，但是她无法在整个网络中使用它们
+* While Eve has real friends who trust her, they do not trust her fake accounts.
+* 当Eve拥有现实中的朋友相信她时，他们不会同时相信她的假账户。
 * She therefore needs to send money through her real account and cheat her friends
+* 她因此需要从她的真实账户发送钱并欺骗她的朋友
 * But even though she can do that. She cannot send the large sums of money
+* 但是即使她能做到这点，她并不能发送如此巨大数额的钱
 * Eve’s friends have not given her a credit line of  $ 1 million and won’t, because they do not trust her with that amount of money
+* Eve的朋友并没有给予她百万美金的信用额度也不会这样做，因为她们不可能相信她到能给予如此大的额度
 * In other words: Eve does not have a sufficient capacity to spend her money with her friends.
+* 换句话说： Eve不会拥有足够的支付能力来在她的朋友网络中花这些钱。
 * Additionally, Eve’s fake accounts need to send money through Eve’s main account because:
+* 额外的，Eve的虚假账号一定要通过Eve的主账号才能发送钱，因为：
   * Valuable trustlines are backed by real world identities
+  * 有价值的trustlines需要现实世界中的真实身份来支持
  
  
 ## And that’s the original idea
+## 这是最原始的概念
 * If you are curious to see applied examples of the original ripple idea we can recommend looking up Hawala banking or correspondence banking
+* 如果你有兴趣了解这些应用了原始瑞波理念的案例，我们推荐可以研究一下Hawala银行系统或者相关的银行系统。
 * The basic idea is:
+* 基本的概念如下：
   * Credit lines with people you trust, varying by how much you trust them
+  * 给予你信任的人额度，并且根据信任程度不同调整
   * People you trust anywhere in the real world, for example your friends or family
+  * 你信任的人们可以在现实世界中的任意地方，例如你的朋友或者家人
   * You can send money through trusted connections 
+  * 你可以通过信任的链接发送钱
   * And pay anyone in the network
+  * 你可以向任意网络中的人进行支付
   * You can close a trustline, if your balance with the other person is zero.
+  * 只要你和某人的余额为0，你就可以关闭这条trustline
   * And because trustlines are linked to real world identities, sybil attacks do not work.
+  * 因为trustlines是与现实世界身份链接的，sybil攻击不会生效
   * Thank you for watching
+  * 谢谢观看
