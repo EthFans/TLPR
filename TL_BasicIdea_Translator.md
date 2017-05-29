@@ -2,23 +2,25 @@
  
 ## Introduction 
 * Hi. today i’m gonna present the basics of the Trustlines Network for you
-* Hi。今天我将会向你展示Trustlines网络的基本情况。
+* Hi。今天我将会向大家展示Trustlines网络的基本介绍。
 * what is the Trustlines Network? 
 * 什么是Trustlines网络？
 * It’s a mobile payment app that extends on the original ripple idea but built on Ethereum
-* 它是一个移动支付应用，延展了最初的瑞波（Ripple）概念，并建立在了以太坊平台上。
+* 它是一款移动支付应用，延展了最初的瑞波（Ripple）概念，并建立在以太坊平台上。
 * And a decentralized platform for hosting customized and interconnected currency networks
-* 同时也是一个用来维护定制化和内部链接货币的去中性化的平台
+* 同时也是一个用来维护定制化和内部链接货币的去中性化平台
+
 ### ToC:
 ### 对C端用户： 
 * In this video, I will give a brief motivation of why crypto currencies as we know them, are not a good medium of exchange for everyday payments
-* 在这个视频中，我会简单介绍一下为什么数字货币并不是一个特别适合日常支付的交易中介
+* 在这个视频中，我会简单介绍一下为什p么我们所熟知的数字货币并不是一个特别适合日常支付的交易中介
 * Then, I’ll explain how the original ripple idea, can create a global payment network based upon the real world trust relationships, that exist between friends.
-* 然后，我会解释最初的瑞波理念是怎么创造一个建立在现实世界信任关系（例如朋友之间）上的全球化支付网络
+* 然后，我会解释最初的瑞波概念是怎么创造一个建立在现实世界信任关系（例如朋友之间）上的全球支付网络
 * Next, I’ll explain how payments facilitated in a chain of friends-of-friends allow for debt cancellation
 * 接着，我会解释建立在朋友的朋友上的支付链条怎样使得债务抵消
 * and finally, I’ll address the system's resistance against sybil attacks 
 * 最终，我会阐述这个系统如何抵抗Sybil攻击。
+
 ## Adoption of cryptocurrency for payments
 ## 在支付中使用数字货币
 * Many have seen blockchain as a promising solution to provide permissionless, decentralized, payments without central intermediaries
@@ -62,6 +64,7 @@
   * 另一方面，你可能不会相信一个刚刚在facebook上加了你的"好友"并给他10美金的信用额度。因为这个人对你来说只是一个陌生人。 
 * Next, let’s look at how trust relationships are used to establish what we call trustlines
 * 接着，我们来看看这些信任关系如何被用来建立一个我们所谓的trustlines。
+
 ## A Trustline
 ## 一个Trustline
 * A trustline exists, when two friends have give each other credit lines.
@@ -74,6 +77,7 @@
 * 在这个例子中，这表示Alice已经给予了Bob 10美金的信用额度
 * In return, Bob has also granted a credit line of $10 to Alice
 * 相反的，Bob也给予了10美金的信用额度到Alice
+
 ### Balance
 ### 余额
 * Suppose Alice needs to pay $5 to Bob
@@ -130,7 +134,7 @@
 * 支付之前之后都不会发生。
 * This also scales out, if we put several people between Alice and Charlie, everyone would only be indebted to someone they have trusted with a credit line
 * 当这个规模化后，如果我们将很多人放在Alice和Charlie之间，所有人都仅会与他们给予过信用额度的人发生借贷关系。
- 
+
 ### Debt cancellation
 ### 债务抵消
 * You may be thinking that this sounds kind of impractical.
